@@ -1,0 +1,312 @@
+@import url("https://font.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900& display=swap");
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+ body { 
+   background:#030303;
+
+}
+ .header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 80%;
+    padding: 20px 10%;
+    background:transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items:calc();
+    z-index:100;
+  
+ }
+ 
+ .logo{
+   font: size 25px; 
+   color: #da2b2b;
+   text-decoration:none;
+   font-weight:600;
+
+ }
+ .navbar a{
+   font-size: 18;
+   color: #d61052;
+   text-decoration: none;
+   font-weight: 500;
+   margin-left:30px;
+   transition: 1s;
+   
+ }
+ .navbar a:hover ,
+ .navbar a.active{
+   color: #11ce4d;
+
+ }
+
+ .Home {
+   height: 800px;
+   width: 970px;
+   
+   background: url('my\ pic.jpg') no-repeat;
+   
+   background-position:left;
+   display: inline-flex;
+   align-items: center;
+   padding:0 3% ;
+   
+   
+ }
+.Home-content {
+   background: none;
+   max-width: 400px;
+   color: #1ad513;
+}
+
+.Home-content h1 {
+   font-size: 56px;
+   font-weight: 700;
+   font: rgb(196, 81, 10);
+}
+
+Home-content h3 
+{
+   font-size: 32px;
+   font-weight: 700;
+    font: #151415;
+}
+.Home-content p{
+   font-size: 16px;
+   margin: 20px 0 40px;
+   color: #8566e9;
+}
+.Home-content .btn-box {
+   display: flex;
+   justify-content: space-between;
+   width: 345px;
+   height: 50px;
+   
+}
+.btn-box a{
+   position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 100%;
+   background: #3499d3;
+   border: 2px solid  #3499d3 ;
+   border-radius: 8px;
+   font-size: 19px;
+   color: #19026b;
+   text-decoration: none;
+   font-weight: 600;
+   letter-spacing:1px;
+   z-index: 2;
+   overflow:hidden;
+   transition: .5s;
+   }
+.btn-box  a:nth-child(2) {
+   background:transparent;
+   color: aqua;
+}
+
+   .btn-box  a:nth-child(2)::before {
+      background:aqua ;
+   }
+
+
+.btn-box a::before{
+   content: '';
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background:rgb(9, 9, 10);
+   z-index: -1;
+   transition: .5s;
+
+}
+.btn-box a:hover::before{
+   width:100%;
+
+}
+
+.home-sci {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .home-sci a {
+   margin: 5px; /* Adjust margin as needed */
+ }
+ 
+ .home-sci a i {
+   font-size: 34px; /* Adjust icon size as needed */
+   color: #333; /* Adjust icon color as needed */
+ }
+ 
+ /* Hover effect */
+ .home-sci a:hover i {
+   color: #149cd7; /* Adjust hover color as needed */
+ }
+ 
+
+.home-sci a::before{
+   content: '';
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   height:100%;
+   background: #050508;
+   z-index: -1;
+   transition: .5s;
+   
+}
+.home-sci a:hover::before {
+   width:10%;
+}
+
+.home-imgHover {
+   position:absolute;
+   top:0;
+   right: 30px;
+   width: 100px;
+   height:100%;
+   background: transparent;
+   border: navajowhite;
+}
+
+.About {
+   height: 800px;
+   width: 970px;
+   background: url('Untitled.jpg') no-repeat;
+   background-position:left;
+   display: center;
+   align-items: center;
+   padding:0 3% ;
+}
+
+.heading ,h2 {
+   font-size: 2rem;
+   margin-bottom:7rem;
+   text-align: center;
+   color: #12109b;
+   z-index: 4;
+}
+.About-content p{ 
+   background-position:center;
+   display: add text-align;
+   align-items: center;
+   padding:0 3% ;
+   text-align: top;
+   background: none;
+   max-width: 200px;
+   color: #b32ebf;
+}
+.btn-box.btns {
+   text-align: left;
+}
+.Education{
+   color: #7e5fdcd0;
+
+}
+
+.title {
+   font-size: 2.5rem;
+   margin: 0 0 1.5rem;
+ }
+ 
+ .skills-content {
+   color: #b11919;
+
+ }
+ .skills-colum.title h3{
+   color: #2c45d4;
+ }
+ h1 {
+   color: #333; /* Dark gray */
+ }
+ 
+ h2 {
+   color: #666; /* Medium gray */
+ }
+ 
+ h3 {
+   color: #999; /* Light gray */
+ }
+ 
+ .progress {
+   padding: 1rem 0;
+ }
+
+.contact{
+   min-height: auto;
+   padding-bottom: 7rem;
+}
+.contact form{
+   max-width: 70rem;
+   margin: auto;
+   text-align:justify;
+}
+.contact form .input-box{
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+/* Contact Form Styles */
+.Contact {
+   padding: 50px;
+ }
+ 
+ .input-box {
+   margin-bottom: 20px;
+ }
+ 
+ .input-field {
+   position: relative;
+ }
+ 
+ .input-field input[type="text"],
+ .input-field input[type="number"],
+ .textarea-field textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   outline: none;
+ }
+ 
+ .input-field input[type="text"]:focus,
+ .input-field input[type="number"]:focus,
+ .textarea-field textarea:focus {
+   border-color: #149cd7;
+ }
+ 
+ .textarea-field textarea {
+   resize: vertical;
+ }
+ 
+ .btn-box {
+   text-align: center;
+ }
+ 
+ .btn {
+   padding: 10px 20px;
+   background-color: #149cd7;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ .btn:hover {
+   background-color: #0b7cad;
+ }
+ 
